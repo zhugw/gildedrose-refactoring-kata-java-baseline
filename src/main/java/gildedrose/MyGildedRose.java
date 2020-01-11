@@ -27,7 +27,7 @@ public class MyGildedRose {
         /**
          * “陈年干酪”（Aged Brie）的品质值随着时间的推移，不减反增
          */
-        quality2ReductionConfigMap.put("Aged Brie", "2147483647:-1");
+        quality2ReductionConfigMap.put("Aged Brie", "0:-2;2147483647:-1");
         /**
          * “魔法”（Conjured）商品每日品质下降速度是正常商品的2倍
          */

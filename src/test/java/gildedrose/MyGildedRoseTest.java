@@ -52,10 +52,10 @@ public class MyGildedRoseTest {
         assertEquals(-1, reduction);
         Item item2 = new Item("Aged Brie", 0, 9);
         reduction = app.getReductionFromConfig(item2);
-        assertEquals(-1, reduction);
+        assertEquals(-2, reduction);
         Item item3 = new Item("Aged Brie", -1, 9);
         reduction = app.getReductionFromConfig(item3);
-        assertEquals(-1, reduction);
+        assertEquals(-2, reduction);
     }
     @Test
     public void getReductionFromConfig_sulfuras() {
@@ -142,7 +142,7 @@ public class MyGildedRoseTest {
         MyGildedRose app = new MyGildedRose(items);
         app.updateQuality();
         assertEquals(11, item1.quality);
-        assertEquals(21, item2.quality);
+        assertEquals(22, item2.quality);
         assertEquals(50, item3.quality);
     }
     @Test
